@@ -1,0 +1,64 @@
+{
+  "users": [
+    {
+      "username": "diya",
+      "email": "diya@gmail.com",
+      "password": "12345",
+      "id": 1
+    }
+  ],
+  "videos": [
+    {
+      "videoId": "2",
+      "title": "deadpool and wolverine",
+      "imageUrl": "https://i.ytimg.com/vi/73_1biulkYk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDhUg67lRm5R1fNDPjl5SLsAnVcTg",
+      "videoUrl": "https://www.youtube.com/embed/73_1biulkYk?si=Orgz1N5K56UCoxxj&autoplay=1",
+      "id": 2
+    },
+    {
+      "videoId": "2",
+      "title": "Mufasa: The Lion King",
+      "imageUrl": "https://i.ytimg.com/vi/MjQG-a7d41Q/maxresdefault.jpg",
+      "videoUrl": "https://www.youtube.com/embed/MjQG-a7d41Q?si=Orgz1N5K56UCoxxj&autoplay=1",
+      "id": 3
+    }
+  ],
+  "category": [
+    {
+      "categoryId": "1",
+      "title": "Movies",
+      "videos": [
+        {
+          "videoId": "2",
+          "title": "deadpool and wolverine",
+          "imageUrl": "https://i.ytimg.com/vi/73_1biulkYk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDhUg67lRm5R1fNDPjl5SLsAnVcTg",
+          "videoUrl": "https://www.youtube.com/embed/73_1biulkYk?si=Orgz1N5K56UCoxxj&autoplay=1",
+          "id": 2
+        }
+      ],
+      "id": 1
+    },
+    {
+      "categoryId": "2",
+      "title": "songs",
+      "videos": [],
+      "id": 2
+    }
+  ],
+  "history": [
+    {
+      "videoId": "2",
+      "title": "deadpool and wolverine",
+      "url": "https://www.youtube.com/embed/73_1biulkYk?si=Orgz1N5K56UCoxxj&autoplay=1",
+      "datetime": "2024-08-30T06:10:50.601Z",
+      "id": 1
+    },
+    {
+      "videoId": "2",
+      "title": "thor : love and thunder",
+      "url": "https://www.youtube.com/embed/Go8nTmfrQd8?si=Orgz1N5K56UCoxxj&autoplay=1",
+      "datetime": "2024-08-30T06:12:03.586Z",
+      "id": 2
+    }
+  ]
+}
