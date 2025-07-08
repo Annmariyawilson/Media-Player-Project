@@ -14,7 +14,7 @@ mpServer.use(middleware)
 mpServer.use(router)
 
 //setting port number
-const PORT = 3001 || process.env.PORT;
+const PORT = 3002 || process.env.PORT;
 
 //calling listen methode with server for activating server
 mpServer.listen(PORT,()=>{
