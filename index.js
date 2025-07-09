@@ -1,23 +1,20 @@
-//importing json.server
-const jsonserver=require("json-server")
+const jsonserver = require("json-server");
+const cors = require("cors"); 
 
-//creating server
-const mpServer=jsonserver.create()
+const mpServer = jsonserver.create();
+const middleware = jsonserver.defaults();
+const router = jsonserver.router("db.json");
 
-//initializing middleware
-const middleware=jsonserver.defaults()
-//creating router instance for resources
-const router=jsonserver.router("db.json")
+mpServer.use(cors({
+  origin: "https://media-five-red.vercel.app", 
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
+  credentials: true
+}));
 
-//configuring middleware and router to server
-mpServer.use(middleware)
-mpServer.use(router)
+mpServer.use(middleware);
+mpServer.use(router);
 
-//setting port number
-const PORT = 3002 || process.env.PORT;
-
-//calling listen methode with server for activating server
-mpServer.listen(PORT,()=>{
-    console.log("Server running at PORT:"+PORT);
-    
-})
+const PORT = process.env.PORT || 3002;
+mpServer.listen(PORT, () => {
+  console.log("Server running at PORT:" + PORT);
+});
